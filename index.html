@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>치타</title>
+  </head>
+  <body>
+    <section class="ch_section">
+      <div id="moving-text">
+        <h3 class="move-text">FAST CHEETAH</h3>
+        <p>
+          가장 빠른 해충방역 <br />
+          치타 해충방역 솔루션
+        </p>
+        <div>
+          해충방제 및 위생관리는 초기 대응이 제일 중요합니다.<br />
+          추가 확산을 막기 위해 누구보다 빠르고 정확한 방역을 실시합니다.
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    window.addEventListener("scroll", function () {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      var movingText = document.getElementById("moving-text");
+
+      movingText.style.top = 0;
+      var moveText = document.getElementById("move-text");
+
+      moveText.style.top = scrollTop + "px";
+    });
+
+    // var swiper = new Swiper(".swiper-container", {
+    //   speed: 500,
+    //   direction: "vertical",
+    //   mousewheel: true,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    //   watchOverflow: true,
+    //   on: {
+    //     slideChange: function () {
+    //       setTimeout(function () {
+    //         swiper.params.touchReleaseOnEdges = false;
+    //         swiper.params.mousewheel.releaseOnEdges = false;
+    //       });
+    //     },
+    //     reachEnd: function () {
+    //       setTimeout(function () {
+    //         swiper.params.touchReleaseOnEdges = true;
+    //         swiper.params.mousewheel.releaseOnEdges = true;
+    //       }, 500);
+    //     },
+    //     reachBeginning: function () {
+    //       setTimeout(function () {
+    //         swiper.params.touchReleaseOnEdges = true;
+    //         swiper.params.mousewheel.releaseOnEdges = true;
+    //       }, 500);
+    //     },
+    //   },
+    // });
+  </script>
+</html>

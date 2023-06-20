@@ -1,0 +1,27 @@
+.ch_section {
+  text-align: center;
+  height: 5000px;
+}
+.ch_section h3 {
+  font-size: 25px;
+}
+.ch_section p {
+  padding: 50px 0 0;
+  font-size: 35px;
+}
+.ch_section div {
+  padding: 20px 0 0;
+}
+#moving-text {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#move-text {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.3s ease-out;
+}
