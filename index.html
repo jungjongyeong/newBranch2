@@ -9,8 +9,8 @@
   </head>
   <body>
     <section class="ch_section">
+      <h3 id="movetext">FAST CHEETAH</h3>
       <div id="moving-text">
-        <h3 class="move-text">FAST CHEETAH</h3>
         <p>
           가장 빠른 해충방역 <br />
           치타 해충방역 솔루션
@@ -23,14 +23,18 @@
     </section>
   </body>
   <script>
+    var prevScroll = window.pageYOffset || document.documentElement.scrollTop;
+
     window.addEventListener("scroll", function () {
       var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       var movingText = document.getElementById("moving-text");
 
       movingText.style.top = 0;
-      var moveText = document.getElementById("move-text");
+      var scrollValue =
+        window.pageYOffset || document.documentElement.scrollTop;
+      var movetext = document.getElementById("movetext");
 
-      moveText.style.top = scrollTop + "px";
+      movetext.style.top = scrollValue + "px";
     });
 
     // var swiper = new Swiper(".swiper-container", {
